@@ -10,10 +10,10 @@ function App() {
     <div className='App'>
       <Nav />
       <Router>
-        <Route exact path='/'>
+        <Route exact path={process.env.PUBLIC_URL + '/'}>
           <MemeCreation />
         </Route>
-        <Route exact path='/my-memes'>
+        <Route exact path={process.env.PUBLIC_URL + '/my-memes'}>
           <MemeList />
         </Route>
       </Router>
