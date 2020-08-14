@@ -15,15 +15,13 @@ export default function MemeImage(props) {
   };
 
   return (
-    <>
-      <li>
-        <img
-          style={imageStyle}
-          src={`/images/${props.image.file}`}
-          alt={`/images/${props.image.name}`}
-          onClick={setImage}
-        ></img>
-      </li>
-    </>
+    <li>
+      <img
+        style={imageStyle}
+        src={`${props.image.file}`}
+        alt={`${props.image.name}`}
+        onClick={setImage}
+      />
+    </li>
   );
 }

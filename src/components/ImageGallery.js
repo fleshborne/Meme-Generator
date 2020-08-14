@@ -18,16 +18,17 @@ export default function ImageGallery(props) {
 
   const listStyle = {
     height: '100vh',
-    'overflow-y': 'scroll',
+    overflowY: 'scroll',
   };
   return (
     <>
       <ul style={listStyle} className='list-group'>
-        {memes.map((image) => (
+        {memes.map((image, i) => (
           <MemeImage
             state={props.state}
             setState={props.setState}
             image={image}
+            key={i}
           />
         ))}
       </ul>
