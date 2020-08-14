@@ -18,8 +18,8 @@ export default function MemeImage(props) {
     <li>
       <img
         style={imageStyle}
-        src={`${props.image.file}`}
-        alt={`${props.image.name}`}
+        src={`/images/${props.image.file}`}
+        alt={`/images/${props.image.name}`}
         onClick={setImage}
       />
     </li>
